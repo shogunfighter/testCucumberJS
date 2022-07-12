@@ -1,13 +1,30 @@
-"# testCucumberJS" 
+## Cucumber JS Test
+### This example is inspired by this [youtube demo](https://www.youtube.com/watch?v=x4jP9ksCnMY)
 
-
-$ npm init -y 
+#### Install dependencies
+```
+$ npm init -y
 $ npm install cucumber
+```
 
-added npm scripts > test
-added test folder
+#### added npm scripts > test
+    `$ cucumber-js test`
 
-phase1: 
+#### added test folder
+
+----
+#### Switch between branch
+
+##### phase1: 
 - Scenario (creation of single scenarios)
-phase2: 
+
+`$ git checkout phase1-per-scenario`
+
+##### phase2: 
 - Scenario Outline
+
+`$ git checkout phase2-scenario-outline`
+
+
+##### Test by running
+`$ npm run test`
