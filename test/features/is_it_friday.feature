@@ -1,11 +1,13 @@
 Feature: Determine if today is Friday.
 
-  Scenario: Monday is not Friday
-    Given today is Monday
+  Scenario Outline: Today is or is not Friday
+    Given today is "<day>"
     When asked if today is Friday
-    Then respond "No"
+    Then respond "<answer>"
 
-  Scenario: Friday is Friday
-    Given today is Friday
-    When asked if today is Friday
-    Then respond "Yes"
+    Examples:
+      | day | answer |
+      | Friday | Yes |
+      | Monday | No |
+      | Tuesday | No |
+      | Wednesday | No |
