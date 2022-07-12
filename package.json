@@ -1,0 +1,23 @@
+{
+  "name": "testCucumberJS",
+  "version": "1.0.0",
+  "description": "\"# testCucumberJS\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shogunfighter/testCucumberJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shogunfighter/testCucumberJS/issues"
+  },
+  "homepage": "https://github.com/shogunfighter/testCucumberJS#readme",
+  "devDependencies": {
+    "cucumber": "^6.0.7"
+  }
+}
