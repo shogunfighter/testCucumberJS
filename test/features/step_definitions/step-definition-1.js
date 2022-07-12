@@ -2,8 +2,8 @@ const assert = require("assert");
 const {Given, When, Then} = require("cucumber");
 const app = require("../../../app");
 
-Given('today is Monday', () => {
-    this.today = "Monday";
+Given('today is {string}', (day) => {
+    this.today = day;
 });
 
 When('asked if today is Friday', () => {
@@ -12,9 +12,4 @@ When('asked if today is Friday', () => {
 
 Then('respond {string}', (expectedAnswer) => {
     assert(this.response, expectedAnswer);
-});
-
-
-Given('today is Friday', () => {
-    this.today = "Friday";
 });
